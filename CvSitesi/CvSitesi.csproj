@@ -155,8 +155,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="cvfrontend\1.svg" />
-    <Content Include="cvfrontend\2.jpg" />
-    <Content Include="cvfrontend\admin\anasayfa.html" />
     <Content Include="cvfrontend\admin\css\bootstrap-grid.css" />
     <Content Include="cvfrontend\admin\css\bootstrap-grid.min.css" />
     <Content Include="cvfrontend\admin\css\bootstrap-grid.rtl.css" />
@@ -181,8 +179,6 @@
     <Content Include="cvfrontend\admin\js\bootstrap.js" />
     <Content Include="cvfrontend\admin\js\bootstrap.min.js" />
     <Content Include="cvfrontend\admin\menu.css" />
-    <Content Include="cvfrontend\cv.jpg" />
-    <Content Include="cvfrontend\index1.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
