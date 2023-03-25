@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BS -->
+    <link rel="stylesheet" href="~/cvfrontend/admin/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Ana Sayfa</title>
+</head>
+<body class="bg-light">
+
+    <div class="bg-dark">
+        <div class=" mt-auto py-3" align="center">
+            <i class="fa-solid fa-fire-flame-curved text-light">
+                <h6 class="text-light"> 2022 | Ümeyir ATASOY</h6>
+            </i>
+        </div>
+    </div>
+
+
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="/Admin/GenelAyarlar" class="w3-bar-item w3-button">Genel Ayarlar</a>
+        <a href="#" class="w3-bar-item w3-button">Hakkımda</a>
+        <a href="#" class="w3-bar-item w3-button">Eğitim</a>
+        <a href="#" class="w3-bar-item w3-button">Sertifikalar</a>
+        <a href="#" class="w3-bar-item w3-button">İletişim</a>
+        <a href="/Admin/CıkısYap/" class="w3-bar-item w3-button">Çıkış Yap</a>
+    </div>
+
+
+    <!-- Page Content -->
+    <div style="margin-left:25%">
+
+        @RenderBody()
+
+    </div>
+
+
+    <!-- FA | JS -->
+    <script src="/cvfrontend/admin/fontawesome/66637520bd.js" crossorigin="anonymous"></script>
+    <script src="~/cvfrontend/admin/js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;   
+}
+.container {
+  height:50px;
+  background:#111;
+  border-bottom: 2px solid orangered; 
+}
+
+.sidebarmenu ul {
+  list-style-type: none;  
+  padding: 10px 0;
+}
+
+.sidebarmenu ul li a{
+  text-decoration: none;  
+  display:block;
+  color:#fff;  
+  padding: 30px 0px 10px 25px;               
+  border-bottom:1px solid orangered;         
+
+}
+.sidebarmenu {
+  background:#111;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  left: -200px;
+  padding-top:50px; 
+  transition: all 0.5s ease-in; 
+  margin-top:52px;
+}
+.sidebarmenu ul i {
+  margin-right:10px;
+}
+.sidebarmenu ul li a:hover {
+  color: orangered; 
+  transition: all 1s; 
+  padding-left: 35px;     
+}
+
+#checkbox {
+  display:none;
+
+}
+
+label #menu {
+  color:orangered; 
+  cursor: pointer;
+  position: fixed;
+  z-index:999;
+  left:20px;  
+  top:20px;       
+}
+
+label #menu:hover {
+  font-size: 1.5rem;  
+}
+
+#checkbox:checked ~ .sidebarmenu {
+  left:0;
+}

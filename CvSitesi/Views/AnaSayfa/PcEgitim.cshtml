@@ -1,0 +1,11 @@
+﻿@using CvSitesi.Models
+@model List<Egitim> 
+@{
+    Layout = null;
+}
+
+@foreach (var x in Model)
+{
+
+    <p>@x.OkulAdi — @x.BolumAdi</p>  
+}
