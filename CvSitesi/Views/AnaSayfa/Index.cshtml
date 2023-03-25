@@ -10,33 +10,33 @@
 
 
     <!-- Mobil Görünüm Menü -->
-    <div class="container shadow-lg border border-info" style="background-color: #e9ecef; margin: auto;">
+    <div class="container shadow-lg  " style="background-color: #e9ecef; margin: auto;">
         <div class="row offset-md-3">
             <div class="col-sm-4 xl-4 shadow-lg pr-3 p-4  d-xl-none">
-                <div class="card border border-info  d-lg-none offset-md-11" style="width: 18rem; background-color: #e9ecef; margin: auto; ">
+                <div class="card border border-dark  d-lg-none offset-md-11" style="width: 18rem; background-color: #e9ecef; margin: auto; ">
                     @Html.Action("MobilSol", "AnaSayfa")
                 </div>
             </div>
         </div>
     </div>
     <!-- PC Görünüm Menü -->
-    <div class="container shadow-lg border border-info  " style="background-color: #e9ecef">
+    <div class="container shadow-lg border border-dark  " style="background-color: #e9ecef">
         <div class="row">
             <div class="col-sm-4 xl-4 shadow-lg pr-3 d-block p-4 d-block p-4 ">
-                <div class="card border border-info position-fixed d-none d-xl-block" style="width: 18rem; background-color: #e9ecef ">
+                <div class="card border border-dark position-fixed d-none d-xl-block" style="width: 18rem; background-color: #e9ecef ">
                     @Html.Action("PcSol", "AnaSayfa")
                 </div>
             </div>
 
             <!-- PC GÖRÜNÜM -->
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 shadow-lg pr-3 d-none d-xl-block p-4">
-                <div class="jumbotron border border-info">
+                <div class="jumbotron border border-dark">
 
                     @Html.Action("PcHakkimda", "AnaSayfa")
                     <hr class="my-4">
 
                     <h2 class="display-5 ">Eğitim <i class="fa-solid fa-school fa-sm"></i></h2>
-                    <div class="alert alert-info" role="alert">
+                    <div class="alert alert-dark" role="alert">
                         @Html.Action("PcEgitim", "AnaSayfa")
                     </div>
                     <hr class="my-4">
@@ -69,18 +69,17 @@
 
                     <h2 class="display-5 ">İletişim Formu <i class="fa-brands fa-wpforms fa-lg "></i></h2>
                     @Html.Action("iletisim", "AnaSayfa")
-                    <hr class="my-4">
                 </div>
             </div>
 
             <!-- Mobil Görünüm -->
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 shadow-lg pr-3 d-xl-none p-4 ">
-                <div class="jumbotron border border-info">
+                <div class="jumbotron ">
                     @Html.Action("PcHakkimda", "AnaSayfa")
                     <hr class="my-4">
 
                     <h3 class="display-5 ">Eğitim <i class="fa-solid fa-school fa-xs"></i></h3>
-                    <div class="alert alert-info" role="alert">
+                    <div class="alert alert-dark" role="alert">
                         @Html.Action("MobilEgitim", "AnaSayfa")
                     </div>
                     <br>
@@ -96,7 +95,7 @@
 
                     <h3 class="display-5 ">İletişim Formu <i class="fa-brands fa-wpforms fa-xs"></i></h3>
                     @Html.Action("iletisim", "AnaSayfa")
-                    <hr class="my-4">
+                    
                 </div>
             </div>
 
