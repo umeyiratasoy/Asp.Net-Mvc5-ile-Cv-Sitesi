@@ -59,9 +59,7 @@ Asp.NET MVC5 ile yapılmış Cv Sitesi </div>
 
 ## Test
 
-<p>Ana Sayfa'yı test etmek ve görmek için <p/><a target="_blank" href="http://www.xbossitex.somee.com/Anasayfa">buraya tıklayınız. </a>
-
-Öğrenilen Asp.net MVC 5 bilgilerini tekrar etmek ve daha fazla gelişmek.
+<p> Ana Sayfa'yı test etmek ve görmek için <a target="_blank" href="http://www.xbossitex.somee.com/Anasayfa">buraya tıklayınız. </a> </p>
 
 
 ## Yapılma Amacı
