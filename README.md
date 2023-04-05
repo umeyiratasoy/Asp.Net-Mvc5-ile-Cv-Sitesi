@@ -59,13 +59,15 @@ Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 	<img  src = "https://r.resimlink.com/kZ_xo72Q.png" width = "300" height = "500" alt = "1"/>
 </div>
 
-
-
-
 ## Admin Panel
 
-
-
+<img  src = "https://r.resimlink.com/opMsy.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/LIkwoK.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/OURsBa6mNe.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/U_0dTOSAQ.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/1C9ljUwyqi.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/afF0eBTK_GMR.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/gAz8nCL_cJNE.png" width = "1100" height = "500" alt = "1"/>
 
 
 ## Yapılma Amacı
