@@ -41,7 +41,7 @@ Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 
 ## AnaSayfa - PC
 
-<img  src = "https://xbossitex.rf.gd/hizliresim/upload/1.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://i.hizliresim.com/9pp3koh.png" width = "1100" height = "500" alt = "1"/>
 
 ## Admin Panel
 
