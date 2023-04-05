@@ -77,4 +77,4 @@ Eposta: deneme@gmail.com
 
 ## Telif Hakkı
 
-Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" tarafından yapmıştır.
+Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" tarafından yapılmıştır.

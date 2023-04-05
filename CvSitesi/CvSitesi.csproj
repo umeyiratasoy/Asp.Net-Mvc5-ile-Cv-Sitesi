@@ -207,6 +207,8 @@
     <Content Include="cvfrontend\admin\js\bootstrap.esm.min.js.map" />
     <Content Include="cvfrontend\admin\js\bootstrap.js.map" />
     <Content Include="cvfrontend\admin\js\bootstrap.min.js.map" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
