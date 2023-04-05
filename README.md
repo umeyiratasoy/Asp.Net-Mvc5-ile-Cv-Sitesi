@@ -47,10 +47,10 @@ Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 ## AnaSayfa - Mobil
 
 <div align="center">
-	<img  src = "https://r.resimlink.com/mx1p2A.png" width = "500" height = "500" alt = "1"/>
-	<img  src = "https://r.resimlink.com/54tA0suaYfIw.png" width = "500" height = "500" alt = "1"/>
-	<img  src = "https://r.resimlink.com/bfAY382iyX.png" width = "500" height = "500" alt = "1"/>
-	<img  src = "https://r.resimlink.com/kZ_xo72Q.png" width = "500" height = "500" alt = "1"/>
+	<img  src = "https://r.resimlink.com/mx1p2A.png" width = "400" height = "400" alt = "1"/>
+	<img  src = "https://r.resimlink.com/54tA0suaYfIw.png" width = "400" height = "400" alt = "1"/>
+	<img  src = "https://r.resimlink.com/bfAY382iyX.png" width = "400" height = "400" alt = "1"/>
+	<img  src = "https://r.resimlink.com/kZ_xo72Q.png" width = "400" height = "400" alt = "1"/>
 </div>
 
 ## Admin Panel
