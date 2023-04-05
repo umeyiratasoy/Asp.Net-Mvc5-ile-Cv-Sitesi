@@ -22,7 +22,7 @@ Bu projenin frontendi w3layouts'dan alınmıştır.
 ## Getting Started
 
 ### Kurulum
-
+sdfsdfsd
 1. Depoyu klonlayın::
 
    ```sh
