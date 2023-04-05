@@ -1,88 +1,51 @@
-﻿
+﻿@using CvSitesi.Models
+@model List<GenelAyarlar>
+
 @{
     ViewBag.Title = "GenelAyarlar";
     Layout = "~/Views/Shared/_Admin.cshtml";
 }
 
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 <div class="">
-    <h1 class="display-1 text-center">GENEL AYARLAR</h1>
-    <h6 class="text-center">Burada web sitenin genel ayarları yapılmaktadır. Web sitenin temel ve genel ihtiyaçlarını buradan düzenleyebilirsiniz.</h6>
+    <h1 class="display-1 text-center">Biyografi</h1>
 </div>
 <br>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <h3 align="center">MENÜ</h3>
-            <div class="mb-3 row">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"><i class="fa-solid fa-heading"></i> &nbsp; Başlık</span>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                        <label for="floatingInputGroup1">Title</label>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"> <i class="fa-solid fa-user"></i> &nbsp; İsim Soyisim </span>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                        <label for="floatingInputGroup1">Name Surname</label>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"><i class="fa-solid fa-exclamation"></i> &nbsp; Açıklama </span>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                        <label for="floatingInputGroup1">Explanation</label>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"> <i class="fa-brands fa-square-instagram"></i> &nbsp; İnstagram </span>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                        <label for="floatingInputGroup1">Username</label>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"><i class="fa-brands fa-square-twitter"></i> &nbsp; Twitter </span>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                        <label for="floatingInputGroup1">Username</label>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"> <i class="fa-brands fa-square-facebook"></i> &nbsp; Facebook </span>
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                        <label for="floatingInputGroup1">Username</label>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"> <i class="fa-solid fa-envelope-open"></i> &nbsp; Eposta</span>
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                        <label for="floatingInputGroup1">E-mail</label>
-                    </div>
-                </div>
-            </div>
-            <div class="" align="right">
-                <button type="button" class="btn btn-dark">Değiştir</button>
-            </div>
-        </div>
-        <div class="col-sm-4"></div>
-    </div>
-</div>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th class="hidden">Id</th>
+        <th>Pp URL</th>
+        <th>İsim Soyisim</th>
+        <th>Biyografi</th>
+        <th>İnstagram</th>
+        <th>Twitter</th>
+        <th>Facebook</th>
+        <th>Eposta</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+
+            <td class="hidden">@x.ID</td>
+            <td><img src="@x.PpImage" width="300" height="300" /></td>
+            <td>@x.IsimSoyisim</td>
+            <td>@x.Biyografi.Substring(0, 10)...</td>
+            <td><a target="_blank" href="https://www.instagram.com/@x.Instagram">@x.Instagram</a></td>
+            <td><a target="_blank" href="https://twitter.com/@x.Twitter">@x.Twitter</a></td>
+            <td><a target="_blank" href="https://www.facebook.com/@x.Facebook">@x.Facebook</a></td>
+            <td><a href="mailto:@x.Eposta">@x.Eposta</a></td>
+
+            <td><a href="/Admin/GenelAyarlarGetir/@x.ID" class="btn btn-warning">Düzenle</a></td>
+
+        </tr>
+    }
+</table>
+
+
 

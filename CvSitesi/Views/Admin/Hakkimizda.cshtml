@@ -1,0 +1,35 @@
+﻿@using CvSitesi.Models
+@model List<Hakkimda>
+@{
+    ViewBag.Title = "Hakkimizda";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<div class="">
+    <h1 class="display-1 text-center">Hakkımızda</h1>
+</div>
+<br>
+
+<table class="table table-bordered">
+    <tr>
+        <th class="hidden">Id</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+
+            <td class="hidden">@x.ID</td>
+
+            <td>@x.Baslik</td>
+            <td>@x.Aciklama</td>
+
+            <td><a href="/Admin/HakkimizdaGetir/@x.ID" class="btn btn-warning">Düzenle</a></td>
+
+        </tr>
+    }
+</table>
+

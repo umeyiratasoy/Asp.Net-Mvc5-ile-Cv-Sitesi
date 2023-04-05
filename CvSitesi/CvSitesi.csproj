@@ -242,6 +242,19 @@
     <Content Include="Views\Shared\_Admin.cshtml" />
     <Content Include="Views\Admin\GenelAyarlar.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Sertifika.cshtml" />
+    <Content Include="Views\Admin\GenelAyarlarGetir.cshtml" />
+    <Content Include="Views\Admin\SertifikaGetir.cshtml" />
+    <Content Include="Views\Admin\YeniSertifika.cshtml" />
+    <Content Include="Views\Admin\YeniAdmin.cshtml" />
+    <Content Include="Views\Admin\YeniEgitim.cshtml" />
+    <Content Include="Views\Admin\Egitim.cshtml" />
+    <Content Include="Views\Admin\EgitimGetir.cshtml" />
+    <Content Include="Views\Admin\Hakkimizda.cshtml" />
+    <Content Include="Views\Admin\HakkimizdaGetir.cshtml" />
+    <Content Include="Views\Admin\Iletisim.cshtml" />
+    <Content Include="Views\Admin\Admin.cshtml" />
+    <Content Include="Views\Admin\AdminGetir.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

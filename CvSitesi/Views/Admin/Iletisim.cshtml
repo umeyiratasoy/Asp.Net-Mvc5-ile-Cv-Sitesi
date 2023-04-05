@@ -1,0 +1,41 @@
+﻿@using CvSitesi.Models
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<Iletisim>
+@{
+    ViewBag.Title = "Iletisim";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<div class="">
+    <h1 class="display-1 text-center">İletişim</h1>
+</div>
+<br>
+
+<table class="table table-bordered">
+    <tr>
+        <th class="hidden">Id</th>
+        <th>Ad Soyad</th>
+        <th>Konu</th>
+        <th>Açıklama</th>
+        <th>Eposta</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+
+            <td class="hidden">@x.ID</td>
+
+            <td>@x.AdSoyad</td>
+            <td>@x.Konu</td>
+            <td>@x.Aciklama</td>
+            <td>@x.Eposta</td>
+
+            <td>@Html.ActionLink("Sil", "IletisimSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek İstediğinizden Emin misiniz?')" })</td>
+
+        </tr>
+    }
+</table>
+@Html.PagedListPager((IPagedList)Model, p => Url.Action("/Iletisim", new { p }))

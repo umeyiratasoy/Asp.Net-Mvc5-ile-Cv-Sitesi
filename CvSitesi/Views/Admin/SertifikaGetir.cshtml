@@ -1,0 +1,107 @@
+﻿@model CvSitesi.Models.Sertifika
+@{
+    ViewBag.Title = "SertifikaGetir";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div class="">
+    <h1 class="display-1 text-center">Sertifika</h1>
+</div>
+<br>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            @using (Html.BeginForm("SertifikaGuncelle", "Admin", FormMethod.Post))
+            {
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-exclamation"></i> &nbsp;</span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.ID, new { @class = "form-control hidden", @readonly = "readonly" })
+
+                            <label for="floatingInputGroup1">Id</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-heading"></i> &nbsp; Başlık</span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Baslik, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Başlık</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-solid fa-circle-exclamation"></i> &nbsp; Açıklama </span>
+                        <div class="form-floating">
+                            @Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Aciklama, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Açıklama</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-brands fa-sourcetree"></i> &nbsp; Sertifika Url </span>
+                        <div class="form-floating">
+                            @Html.TextAreaFor(x => x.SImage, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.SImage, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Url</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-brands fa-sourcetree"></i> &nbsp; Sertifika Linki </span>
+                        <div class="form-floating">
+                            @Html.TextAreaFor(x => x.SLink, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.SLink, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Sertifika Linki</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="" align="right">
+                    <button class="btn btn-dark">Güncelle</button>
+                </div>
+            }
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+<div align="center">
+    <p>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Dikkat !</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <p>Hiçbir kutucuğu boş bırakmayınız.</p>
+                    <p>Açıklama kısmına 10 karakterden az karakter girmeyiniz.</p>
+                    <p>Sertifika linki kısmına 30 karakterden az karakter girmeyiniz.</p>
+                    <p>Url yazılan kısımlara hizliresimden resmi yükleyip doğrudan linkini buraya yapıştırınız.</p>
+                    <p>Hizli resim yüklemek için <a target="_blank" href="https://xbossitex.rf.gd/hizliresim/">!!!Buraya Tıkla!!!</a></p>
+                    <p>Başlık ve açıklama sadece mobil görünümde aktiftir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

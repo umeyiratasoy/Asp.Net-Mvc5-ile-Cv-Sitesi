@@ -11,14 +11,23 @@
             @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.AdSoyad, "", new { @class = "text-black" })
         </div>
+
         <div class="form-group">
             <label for="exampleFormControlInput1">E-Posta</label>
-            @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
+            @Html.TextBoxFor(x => x.Eposta, new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.Eposta, "", new { @class = "text-black" })
         </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Konu</label>
+            @Html.TextBoxFor(x => x.Konu, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Konu, "", new { @class = "text-black" })
+        </div>
+
+
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Açıklama</label>
-            @Html.TextAreaFor(x => x.AdSoyad, new { @class = "form-control" })
+            @Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.Aciklama, "", new { @class = "text-black" })
         </div>
         <div class="form-group">

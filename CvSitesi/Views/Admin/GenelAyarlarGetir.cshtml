@@ -1,0 +1,146 @@
+﻿@model CvSitesi.Models.GenelAyarlar
+@{
+    ViewBag.Title = "GenelAyarlarGetir";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<div class="">
+    <h1 class="display-1 text-center">Biyografi</h1>
+</div>
+<br>
+
+<div align="center">
+    <p>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Dikkat !</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <p>Hiçbir kutucuğu boş bırakmayınız.</p>
+                    <p>Eposta kutucuğunu doğru eposta adresi giriniz. Örn: orn@ogr.com</p>
+                    <p>Biyografi kısmına 10 karakterden az karakter girmeyiniz.</p>
+                    <p>Sosyal medya hesaplarınız için kullanıcı adlarınızı yazınız veya link sonu text yazınız. orn: instagram.com/"umeyiratasoy"</p>
+                    <p>Url yazılan kısımlara hizliresimden resmi yükleyip doğrudan linkini buraya yapıştırınız.</p>
+                    <p>Hizli resim yüklemek için <a target="_blank" href="https://xbossitex.rf.gd/hizliresim/">!!!Buraya Tıkla!!!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            @using (Html.BeginForm("GenelAyarlarGuncelle", "Admin", FormMethod.Post))
+            {
+
+                <div class="mb-3 row hidden">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-exclamation"></i> &nbsp;</span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.ID, new { @class = "form-control hidden", @readonly = "readonly" })
+
+                            <label for="floatingInputGroup1">ID</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-brands fa-sourcetree"></i> &nbsp; Foto Url</span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.PpImage, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.PpImage, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Foto Url</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-solid fa-user"></i> &nbsp; İsim Soyisim </span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.IsimSoyisim, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.IsimSoyisim, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">İsim Soyisim</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-book"></i> &nbsp; Biyografi </span>
+                        <div class="form-floating">
+                            @Html.TextAreaFor(x => x.Biyografi, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Biyografi, "", new { @class = "text-black" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-brands fa-square-instagram"></i> &nbsp; İnstagram </span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.Instagram, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Instagram, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">İnstagram</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-brands fa-square-twitter"></i> &nbsp; Twitter </span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.Twitter, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Twitter, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Twitter</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-brands fa-square-facebook"></i> &nbsp; Facebook </span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.Facebook, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Facebook, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Facebook</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-solid fa-envelope-open"></i> &nbsp; Eposta</span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.Eposta, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Eposta, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Eposta</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="" align="right">
+                    <button class="btn btn-dark">Güncelle</button>
+                </div>
+            }
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+
+
+
+

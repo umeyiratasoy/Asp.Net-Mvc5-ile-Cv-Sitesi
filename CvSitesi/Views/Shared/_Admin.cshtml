@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/cvfrontend/admin/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/66637520bd.js" crossorigin="anonymous"></script>
     <title>CV - Admin</title>
 </head>
 <body class="bg-light">
@@ -18,7 +19,7 @@
     <div class="bg-dark">
         <div class=" mt-auto py-3" align="center">
             <i class="fa-solid fa-fire-flame-curved text-light">
-                <h6 class="text-light"> 2022 | Ümeyir ATASOY</h6>
+                <h6 class="text-light"> 2022 | Ümeyİr ATASOY</h6>
             </i>
         </div>
     </div>
@@ -26,19 +27,22 @@
 
 
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
         <h3 class="w3-bar-item">Menu</h3>
-        <a href="/Admin/GenelAyarlar" class="w3-bar-item w3-button">Genel Ayarlar</a>
-        <a href="#" class="w3-bar-item w3-button">Hakkımda</a>
-        <a href="#" class="w3-bar-item w3-button">Eğitim</a>
-        <a href="#" class="w3-bar-item w3-button">Sertifikalar</a>
-        <a href="#" class="w3-bar-item w3-button">İletişim</a>
+        <a href="/Admin/GenelAyarlar" class="w3-bar-item w3-button">Biyografi</a>
+        <a href="/Admin/Hakkimizda" class="w3-bar-item w3-button">Hakkımda</a>
+        <a href="/Admin/Egitim" class="w3-bar-item w3-button">Eğitim</a>
+        <a href="/Admin/Sertifika" class="w3-bar-item w3-button">Sertifikalar</a>
+        <a href="/Admin/Iletisim" class="w3-bar-item w3-button">İletişim</a>
+        <a href="/Admin/Admin" class="w3-bar-item w3-button">Admin</a>
+
+        <a target="_blank" href="/AnaSayfa" class="w3-bar-item w3-button">Siteye Git</a>
         <a href="/Admin/CıkısYap/" class="w3-bar-item w3-button">Çıkış Yap</a>
     </div>
 
 
     <!-- Page Content -->
-    <div style="margin-left:25%">
+    <div style="margin-left:15%">
 
         @RenderBody()
 

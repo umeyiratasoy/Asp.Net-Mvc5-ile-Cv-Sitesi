@@ -1,0 +1,44 @@
+﻿@model CvSitesi.Models.Admin
+@{
+    ViewBag.Title = "YeniAdmin";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div class="">
+    <h1 class="display-1 text-center">Admin Ekle</h1>
+</div>
+<br>
+<br />
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Eposta)
+    @Html.TextBoxFor(x => x.Eposta, new { @class = "form-control" })
+
+    @Html.ValidationMessageFor(model => model.Eposta, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.Sifre)
+    @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
+
+    @Html.ValidationMessageFor(model => model.Sifre, "", new { @class = "text-black" })
+    <br />
+    <br />
+    <button class="btn btn-info">Admin Ekle</button>
+</form>
+
+
+
+<div align="center">
+    <p>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Dikkat !</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <p>Hiçbir kutucuğu boş bırakmayınız.</p>
+                    <p>Eposta kutucuğunu doğru eposta adresi giriniz. Örn: orn@ogr.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@using CvSitesi.Models
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<Sertifika>
+@{
+    ViewBag.Title = "Sertifika";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<div class="">
+    <h1 class="display-1 text-center">Sertifika</h1>
+</div>
+<br>
+
+<a href="/Admin/YeniSertifika/" class="btn btn-warning">Yeni Sertifika Ekle </a>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th class="hidden">Id</th>
+        <th>Sertifika Resmi</th>
+        <th>Başlık</th>
+        <th>Açıklama </th>
+        <th>Sertifika Linki </th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+
+            <td class="hidden">@x.ID</td>
+
+            <td><img src="@x.SImage" width="300" height="300" /></td>
+            <td>@x.Baslik</td>
+            <td>@x.Aciklama.Substring(0, 10)...</td>
+            <td><a target="_blank" href="@x.SLink">@x.SLink.Substring(0, 30)...</a></td>
+
+            <td><a href="/Admin/SertifikaGetir/@x.ID" class="btn btn-warning">Güncelle</a></td>
+            <td>@Html.ActionLink("Sil", "SertifikaSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek İstediğinizden Emin misiniz?')" })</td>
+
+        </tr>
+    }
+</table>
+
+@Html.PagedListPager((IPagedList)Model, p => Url.Action("/Sertifika", new { p }))
+
