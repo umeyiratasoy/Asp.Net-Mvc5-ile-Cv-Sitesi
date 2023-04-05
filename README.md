@@ -40,15 +40,12 @@ Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 
 
 ## AnaSayfa - PC
-<img  src = "https://imgyukle.com/f/2023/03/13/Qg3NBN.jpeg" width = "1100" height = "500" alt = "6"/>
+
+<img  src = "https://xbossitex.rf.gd/hizliresim/upload/1.png" width = "1100" height = "500" alt = "1"/>
 
 ## Admin Panel
 
-<img  src = "https://xbossitex.rf.gd/hizliresim/upload/1.png" width = "1100" height = "500" alt = "1"/>
-<img  src = "https://imgyukle.com/f/2023/03/13/QgevOs.jpeg" width = "1100" height = "500" alt = "2"/>
-<img  src = "https://imgyukle.com/f/2023/03/13/QgeFO0.jpeg" width = "1100" height = "500" alt = "3"/>
-<img  src = "https://imgyukle.com/f/2023/03/13/QgewCM.jpeg" width = "1100" height = "500" alt = "4"/>
-<img  src = "https://imgyukle.com/f/2023/03/13/Qg3yFG.jpeg" width = "1100" height = "500" alt = "5"/>
+
 
 
 
