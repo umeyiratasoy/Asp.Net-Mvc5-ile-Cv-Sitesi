@@ -7,13 +7,13 @@ Asp.NET MVC5 ile yapılmış Cv Sitesi </div>
 
 
 
-
 ## Teknolojiler, Çerçeveler ve En İyi Uygulamalar
 
   * ASP.Net 
   * ASP.Net Validation 
   * PagedList.Mvc
   * Bootstrap
+  * Font Awesome
   * Microsoft.AspNet.WebPages
   * SQL Server
   * PagedList
@@ -57,9 +57,19 @@ Asp.NET MVC5 ile yapılmış Cv Sitesi </div>
 	<img  src = "https://r.resimlink.com/kZ_xo72Q.png" width = "300" height = "500" alt = "1"/>
 </div>
 
+
+## Özellikler
+<p> Ana Sayfada kayan menü </p>
+<p> Ana Sayfa için Mobil Tasarım (Responsive) </p>
+<p> Dark Tema </p>
+
 ## Test
 
 <p> Ana Sayfa'yı test etmek ve görmek için <a target="_blank" href="http://www.xbossitex.somee.com/Anasayfa">buraya tıklayınız. </a> </p>
+<p> Admin Panel'i test etmek ve görmek için <a target="_blank" href="http://www.xbossitex.somee.com/Admin">buraya tıklayınız. </a> </p>
+Admin Panel giriş bilgileri:
+Eposta: deneme@gmail.com
+Şifre: deneme
 
 
 ## Yapılma Amacı
