@@ -5,9 +5,7 @@ Asp.NET MVC5 ile yapılmış Cv Sitesi </div>
    <a href = "https://www.linkedin.com/in/umeyir-atasoy/"><img  src = "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" width = "85" height = "70" alt = "My Linkedin Profile"/></a>
 </div>
 
-## Telif Hakkı
 
-Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 
 
 ## Teknolojiler, Çerçeveler ve En İyi Uygulamalar
@@ -59,18 +57,17 @@ Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 	<img  src = "https://r.resimlink.com/kZ_xo72Q.png" width = "300" height = "500" alt = "1"/>
 </div>
 
-## Admin Panel
+## Test
 
-<div align="center">
-<img  src = "https://r.resimlink.com/opMsy.png" width = "550" height = "500" alt = "1"/>
-<img  src = "https://r.resimlink.com/LIkwoK.png" width = "550" height = "500" alt = "1"/>
-<img  src = "https://r.resimlink.com/OURsBa6mNe.png" width = "550" height = "500" alt = "1"/>
-<img  src = "https://r.resimlink.com/U_0dTOSAQ.png" width = "550" height = "500" alt = "1"/>
-<img  src = "https://r.resimlink.com/1C9ljUwyqi.png" width = "550" height = "500" alt = "1"/>
-<img  src = "https://r.resimlink.com/afF0eBTK_GMR.png" width = "550" height = "500" alt = "1"/>
-<img  src = "https://r.resimlink.com/gAz8nCL_cJNE.png" width = "550" height = "500" alt = "1"/>
-</div>
+<p>Ana Sayfa'yı test etmek ve görmek için <p/><a target="_blank" href="http://www.xbossitex.somee.com/Anasayfa">buraya tıklayınız. </a>
+
+Öğrenilen Asp.net MVC 5 bilgilerini tekrar etmek ve daha fazla gelişmek.
+
 
 ## Yapılma Amacı
 
 Öğrenilen Asp.net MVC 5 bilgilerini tekrar etmek ve daha fazla gelişmek.
+
+## Telif Hakkı
+
+Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" tarafından yapmıştır.
