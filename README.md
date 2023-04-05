@@ -56,9 +56,6 @@ Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 	<img  src = "https://r.resimlink.com/bfAY382iyX.png" width = "400" height = "500" alt = "1"/>
 </div>
 <div align="center">
-	<img  src = "https://r.resimlink.com/mx1p2A.png" width = "400" height = "500" alt = "1"/>
-</div>
-<div align="center">
 	<img  src = "https://r.resimlink.com/kZ_xo72Q.png" width = "400" height = "500" alt = "1"/>
 </div>
 
