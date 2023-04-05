@@ -1,5 +1,4 @@
 # <p align="center">Asp.Net Mvc5 ile Cv Sitesi</p>
-Asp.NET MVC5 ile yapılmış Cv Sitesi </div>
 
 <div align="center">
    <a href = "https://www.linkedin.com/in/umeyir-atasoy/"><img  src = "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" width = "85" height = "70" alt = "My Linkedin Profile"/></a>
@@ -74,7 +73,7 @@ Eposta: deneme@gmail.com
 
 ## Yapılma Amacı
 
-Öğrenilen Asp.net MVC 5 bilgilerini tekrar etmek ve daha fazla gelişmek.
+Öğrenilen Asp.net MVC5 bilgilerini tekrar etmek ve daha fazla gelişmek.
 
 ## Telif Hakkı
 
