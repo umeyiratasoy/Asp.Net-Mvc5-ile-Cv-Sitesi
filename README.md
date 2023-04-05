@@ -41,7 +41,15 @@ Bu projenin frontendini ve backendini tamamen "Ümeyir ATASOY" yapmıştır.
 
 ## AnaSayfa - PC
 
-<img  src = "https://xbossitex.rf.gd/hizliresim/upload/1.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/07LFQuDA.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/43-Lrx8.png" width = "1100" height = "500" alt = "1"/>
+
+## AnaSayfa - Mobil
+
+<img  src = "https://r.resimlink.com/mx1p2A.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/54tA0suaYfIw.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/bfAY382iyX.png" width = "1100" height = "500" alt = "1"/>
+<img  src = "https://r.resimlink.com/kZ_xo72Q.png" width = "1100" height = "500" alt = "1"/>
 
 ## Admin Panel
 
