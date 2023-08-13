@@ -41,7 +41,7 @@
 
 Projenin frontend görselleri aşağıdaki bağlantıya tıklayarak gidebilirsiniz.
 <br>
-<a href="https://goo.by/8RLWS" /> Bağlantı 
+<a href="https://goo.by/8RLWS" target="_blank">Bağlantı </a>
 
 
 ## Özellikler
