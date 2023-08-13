@@ -32,7 +32,8 @@
 2. `CvSitesi.sln` dosyasını `Visual Studio` ile açın.
 3. `Web.Config` dosyasındaki `connectionStrings` kısmını açın ve kendi veritabanı bağlantı dizginizi girin
 4. `Package Manager Console` kullanarak veritabanını oluşturun. // update-database
-5. `AnaSayfa` un içinde `Index.cshtml` sağ tıklayıp `View in Browser` e tıklayıp blogu açın. 
+5. Admin panele giriş için MSSQL'de `Admins` tablosuna admin üyesi ekleyin.
+6. `AnaSayfa` un içinde `Index.cshtml` sağ tıklayıp `View in Browser` e tıklayıp blogu açın. 
 
 
 
