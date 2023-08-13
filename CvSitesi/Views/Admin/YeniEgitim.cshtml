@@ -1,0 +1,41 @@
+﻿@model CvSitesi.Models.Egitim
+@{
+    ViewBag.Title = "YeniEgitim";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div class="">
+    <h1 class="display-1 text-center">Eğitim Ekle</h1>
+</div>
+<br>
+<br />
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.OkulAdi)
+    @Html.TextBoxFor(x => x.OkulAdi, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.OkulAdi, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.BolumAdi)
+    @Html.TextBoxFor(x => x.BolumAdi, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.BolumAdi, "", new { @class = "text-black" })
+    <br />
+    <br />
+    <button class="btn btn-info">Eğitim Ekle</button>
+</form>
+
+
+
+<div align="center">
+    <p>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Dikkat !</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <p>Hiçbir kutucuğu boş bırakmayınız.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

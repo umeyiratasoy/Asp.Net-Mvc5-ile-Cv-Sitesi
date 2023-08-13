@@ -1,0 +1,96 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BS -->
+    <link rel="stylesheet" href="~/cvfrontend/admin/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/66637520bd.js" crossorigin="anonymous"></script>
+    <title>CV - Admin</title>
+</head>
+<body class="bg-light">
+
+    <div class="bg-dark">
+        <div class=" mt-auto py-3" align="center">
+            <i class="fa-solid fa-fire-flame-curved text-light">
+                <h6 class="text-light"> 2022 | Ümeyİr ATASOY</h6>
+            </i>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Menü</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item active">
+                                    <a href="/Admin/GenelAyarlar" class="nav-link">Biyografi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/Admin/Hakkimizda" class="nav-link">Hakkımda</a>
+                                </li>
+                                <li class="nav-item">
+
+                                    <a href="/Admin/Egitim" class="nav-link">Eğitim</a>
+                                </li>
+                                <li class="nav-item">
+
+                                    <a href="/Admin/Sertifika" class="nav-link">Sertifikalar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/Admin/Iletisim" class="nav-link">İletişim</a>
+                                </li>
+                                <li class="nav-item">
+
+                                    <a href="/Admin/Admin" class="nav-link">Admin</a>
+                                </li>
+                                <li class="nav-item">
+
+
+                                    <a target="_blank" href="/AnaSayfa" class="nav-link">Siteye Git</a>
+                                </li>
+                                <li class="nav-item">
+
+
+                                    <a href="/Admin/CıkısYap/" class="nav-link">Çıkış Yap</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    @RenderBody()
+
+
+
+
+    <!-- FA | JS -->
+    <script src="/cvfrontend/admin/fontawesome/66637520bd.js" crossorigin="anonymous"></script>
+    <script src="~/cvfrontend/admin/js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>
+
+
+
+

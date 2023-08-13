@@ -1,0 +1,65 @@
+﻿@model CvSitesi.Models.GenelAyarlar
+@{
+    ViewBag.Title = "YeniGenelAyarlar";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+<div class="">
+    <h1 class="display-1 text-center">Eğitim Ekle</h1>
+</div>
+<br>
+<br />
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.PpImage)
+    @Html.TextBoxFor(x => x.PpImage, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.PpImage, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.IsimSoyisim)
+    @Html.TextBoxFor(x => x.IsimSoyisim, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.IsimSoyisim, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.Biyografi)
+    @Html.TextBoxFor(x => x.Biyografi, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Biyografi, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.Instagram)
+    @Html.TextBoxFor(x => x.Instagram, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Instagram, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.Twitter)
+    @Html.TextBoxFor(x => x.Twitter, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Twitter, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.Facebook)
+    @Html.TextBoxFor(x => x.Facebook, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Facebook, "", new { @class = "text-black" })
+    <br />
+    @Html.LabelFor(x => x.Eposta)
+    @Html.TextBoxFor(x => x.Eposta, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Eposta, "", new { @class = "text-black" })
+    <br />
+    <br />
+    <br />
+    <button class="btn btn-info">Biyografi Ekle</button>
+</form>
+
+
+
+<div align="center">
+    <p>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Dikkat !</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <p>Hiçbir kutucuğu boş bırakmayınız.</p>
+                    <p>Sadece 1 kez eklenebilir.!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

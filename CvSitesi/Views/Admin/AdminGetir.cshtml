@@ -1,0 +1,83 @@
+﻿@model CvSitesi.Models.Admin
+@{
+    ViewBag.Title = "AdminGetir";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div class="">
+    <h1 class="display-1 text-center">Eğitim</h1>
+    <h6 class="text-center">Açıklama</h6>
+</div>
+<br>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            @using (Html.BeginForm("AdminGuncelle", "Admin", FormMethod.Post))
+            {
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-exclamation"></i> &nbsp;</span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.ID, new { @class = "form-control hidden", @readonly = "readonly" })
+
+                            <label for="floatingInputGroup1">Id</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-solid fa-envelope-open"></i> &nbsp; Eposta</span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.Eposta, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Eposta, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Eposta</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"> <i class="fa-exclamation"></i> &nbsp; Şifre </span>
+                        <div class="form-floating">
+                            @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.Sifre, "", new { @class = "text-black" })
+                            <label for="floatingInputGroup1">Şifre</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="" align="right">
+                    <button class="btn btn-dark">Güncelle</button>
+                </div>
+            }
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+
+
+
+<div align="center">
+    <p>
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Dikkat !</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <p>Hiçbir kutucuğu boş bırakmayınız.</p>
+                    <p>Eposta kutucuğunu doğru eposta adresi giriniz. Örn: orn@orn.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

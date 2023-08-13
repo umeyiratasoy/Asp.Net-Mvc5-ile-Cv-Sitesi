@@ -1,0 +1,21 @@
+﻿@using CvSitesi.Models
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<Sertifika>
+@{
+    Layout = null;
+}
+
+@foreach (var x in Model)
+{
+    <div class="card shadow-lg mx-auto" style="width: 18rem;">
+        <img src="@x.SImage" class="card-img-top" alt="..." style="width: 287px; height: 200px; ">
+        <div class="card-body " style="background-color: #e9ecef">
+            <h5 class="card-title">@x.Baslik</h5>
+            <p class="card-text">@x.Aciklama</p>
+            <a target="_blank" href="@x.SLink" class="btn btn-secondary">Sertfika'ya git</a>
+        </div>
+    </div>
+    <br>
+}
+@Html.PagedListPager((IPagedList)Model, p => Url.Action("/", new { p } ))

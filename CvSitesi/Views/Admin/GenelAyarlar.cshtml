@@ -1,0 +1,59 @@
+﻿@using CvSitesi.Models
+@model List<GenelAyarlar>
+
+@{ ViewBag.Title = "GenelAyarlar";
+                Layout = "~/Views/Shared/_Admin.cshtml"; }
+
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<div class="">
+    <h1 class="display-1 text-center">Biyografi</h1>
+</div>
+<br>
+
+<a href="/Admin/YeniGenelAyarlar/" class="btn btn-warning">Yeni Biyografi Ekle</a>
+<br>
+
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th class="hidden">Id</th>
+        <th>Pp URL</th>
+        <th>İsim Soyisim</th>
+        <th>Biyografi</th>
+        <th>İnstagram</th>
+        <th>Twitter</th>
+        <th>Facebook</th>
+        <th>Eposta</th>
+        <th>Düzenle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+
+
+    <td class="hidden">@x.ID</td>
+    <td><img src="@x.PpImage" width="300" height="300" /></td>
+    <td>@x.IsimSoyisim</td>
+    <td>@x.Biyografi.Substring(0, 10)...</td>
+    <td><a target="_blank" href="https://www.instagram.com/@x.Instagram">@x.Instagram</a></td>
+    <td><a target="_blank" href="https://twitter.com/@x.Twitter">@x.Twitter</a></td>
+    <td><a target="_blank" href="https://www.facebook.com/@x.Facebook">@x.Facebook</a></td>
+    <td><a href="mailto:@x.Eposta">@x.Eposta</a></td>
+
+    <td><a href="/Admin/GenelAyarlarGetir/@x.ID" class="btn btn-warning">Düzenle</a></td>
+
+    <td>@Html.ActionLink("Sil", "EgitimSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek İstediğinizden Emin misiniz?')" })</td>
+
+</tr>}
+</table>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+        </div>
+    </div>
+</div>
+
+

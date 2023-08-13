@@ -1,0 +1,12 @@
+﻿@using CvSitesi.Models
+@model List<Sertifika>
+@{
+    Layout = null;
+}
+
+@{ int i = 0; }
+@foreach (var x in Model)
+{
+
+    <li data-target="#carouselExampleCaptions" data-slide-to="@{i++;} @i" ></li>
+}

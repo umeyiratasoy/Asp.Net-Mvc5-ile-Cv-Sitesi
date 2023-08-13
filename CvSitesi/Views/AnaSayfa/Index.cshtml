@@ -1,0 +1,112 @@
+﻿@using CvSitesi.Models
+@using PagedList
+@using PagedList.Mvc
+@model List<GenelAyarlar>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AnaSayfa.cshtml";
+}
+
+
+
+    <!-- Mobil Görünüm Menü -->
+    <div class="container shadow-lg  " style="background-color: #e9ecef; margin: auto;">
+        <div class="row offset-md-3">
+            <div class="col-sm-4 xl-4 shadow-lg pr-3 p-4  d-xl-none">
+                <div class="card border border-dark  d-lg-none offset-md-11" style="width: 18rem; background-color: #e9ecef; margin: auto; ">
+                    @Html.Action("MobilSol", "AnaSayfa")
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PC Görünüm Menü -->
+    <div class="container shadow-lg border border-dark  " style="background-color: #e9ecef">
+        <div class="row">
+            <div class="col-sm-4 xl-4 shadow-lg pr-3 d-block p-4 d-block p-4 ">
+                <div class="card border border-dark position-fixed d-none d-xl-block" style="width: 18rem; background-color: #e9ecef ">
+                    @Html.Action("PcSol", "AnaSayfa")
+                </div>
+            </div>
+
+            <!-- PC GÖRÜNÜM -->
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 shadow-lg pr-3 d-none d-xl-block p-4">
+                <div class="jumbotron border border-dark">
+
+                    @Html.Action("PcHakkimda", "AnaSayfa")
+                    <hr class="my-4">
+
+                    <h2 class="display-5 ">Eğitim <i class="fa-solid fa-school fa-sm"></i></h2>
+                    <div class="alert alert-dark" role="alert">
+                        @Html.Action("PcEgitim", "AnaSayfa")
+                    </div>
+                    <hr class="my-4">
+
+                    <h2 class="display-5 ">Sertifikalar <i class="fa-solid fa-kitchen-set"></i></h2>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0"></li>
+                            @Html.Action("PcSertifika1", "AnaSayfa")
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://mebkurs.com/wp-content/uploads/2018/09/meb-onayl%C4%B1-sertifika-2.jpg" class="d-block w-100" alt="..." style="height:400px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 style="color: black;">SERTİFİKALAR İÇİN SAĞ KAYDIR</h5>
+                                </div>
+                            </div>
+                            @Html.Action("PcSertifika2", "AnaSayfa")
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <hr class="my-4">
+
+                    <h2 class="display-5 ">İletişim Formu <i class="fa-brands fa-wpforms fa-lg "></i></h2>
+                    @Html.Action("iletisim", "AnaSayfa")
+                </div>
+            </div>
+
+            <!-- Mobil Görünüm -->
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 shadow-lg pr-3 d-xl-none p-4 ">
+                <div class="jumbotron ">
+                    @Html.Action("PcHakkimda", "AnaSayfa")
+                    <hr class="my-4">
+
+                    <h3 class="display-5 ">Eğitim <i class="fa-solid fa-school fa-xs"></i></h3>
+                    <div class="alert alert-dark" role="alert">
+                        @Html.Action("MobilEgitim", "AnaSayfa")
+                    </div>
+                    <br>
+                    <hr class="my-4">
+
+
+                    <h3 class="display-5 ">Sertifikalar <i class="fa-solid fa-kitchen-set fa-xs"></i></h3>
+
+                    @Html.Action("MobilSertifika", "AnaSayfa")
+                    <hr class="my-4">
+
+
+
+                    <h3 class="display-5 ">İletişim Formu <i class="fa-brands fa-wpforms fa-xs"></i></h3>
+                    @Html.Action("iletisim", "AnaSayfa")
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+

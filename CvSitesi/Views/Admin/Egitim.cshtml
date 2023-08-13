@@ -1,0 +1,47 @@
+﻿@using CvSitesi.Models
+@model List<Egitim>
+@{
+    ViewBag.Title = "Egitim";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<div class="">
+    <h1 class="display-1 text-center">Eğitim</h1>
+</div>
+<br>
+
+<a href="/Admin/YeniEgitim/" class="btn btn-warning">Yeni Eğitim Ekle</a>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th class="hidden">Id</th>
+        <th>Okul Adı</th>
+        <th>Bölüm Adı</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+
+
+            <td class="hidden">@x.ID</td>
+
+            <td>@x.OkulAdi</td>
+            <td>@x.BolumAdi</td>
+
+            <td><a href="/Admin/EgitimGetir/@x.ID" class="btn btn-warning">Güncelle</a></td>
+            <td>@Html.ActionLink("Sil", "EgitimSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek İstediğinizden Emin misiniz?')" })</td>
+
+        </tr>
+
+
+    }
+</table>
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+﻿@using CvSitesi.Models
+@model List<Hakkimda>
+@{
+    Layout = null;
+}
+
+@foreach (var x in Model)
+{
+
+    <h1 class="display-5 " style="margin: auto;">@x.Baslik</h1>
+    <p class="lead pl-3">@x.Aciklama</p>
+}

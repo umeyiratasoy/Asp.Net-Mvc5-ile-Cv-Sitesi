@@ -1,0 +1,30 @@
+﻿@using CvSitesi.Models
+@model List<GenelAyarlar>
+@{
+    Layout = null;
+}
+
+@foreach (var i in Model)
+{
+    <img src="@i.PpImage" class="card-img-top" alt="...">
+}
+<div class="card-body " style="background-color: #d6d8d9;">
+    @foreach (var y in Model)
+    {
+        <h5 class="card-title text-center">@y.IsimSoyisim</h5>
+        <p class="card-text text-center">@y.Biyografi</p>
+    }
+
+</div>
+<ul class="list-group list-group-flush">
+    @foreach (var x in Model)
+    {
+        <li class="list-group-item border border-dark " style="background-color: #d6d8d9;" ><i class="fa-brands fa-square-instagram"></i> <a  target="_blank" style="color:black;" href="https://www.instagram.com/@x.Instagram">@x.Instagram</a></li>
+        <li class="list-group-item border border-dark" style="background-color: #d6d8d9;"><i class="fa-brands fa-twitter"></i> <a target="_blank" style="color:black;" href="https://twitter.com/@x.Twitter">@x.Twitter</a></li>
+        <li class="list-group-item border border-dark " style="background-color: #d6d8d9;"><i class="fa-brands fa-facebook"></i> <a target="_blank" style="color:black;" href="https://www.facebook.com/@x.Facebook">@x.Facebook</a></li>
+        <li class="list-group-item border border-dark " style="background-color: #d6d8d9;; 9ecef "><i class="fa-solid fa-envelope"></i> <a target="_blank" style="color:black;" href="mailto:@x.Eposta">@x.Eposta</a></li>
+
+    }
+
+</ul>
+
